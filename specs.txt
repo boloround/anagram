@@ -1,0 +1,10 @@
+#1.
+input a single letter word: a -> a.
+
+#2.
+input a two letters word: ab -> ab, ba.
+
+#3.
+input a three letters word: abc -> abc, acb, bca, bac, cab, cba.
+
+#4.
