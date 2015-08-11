@@ -17,6 +17,8 @@
 
                 if ($input_letters_array == $word_array) {
                     array_push($output_list_array, $word);
+                } else {
+                    return "no match";
                 }
             }
             return $output_list_array;

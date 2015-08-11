@@ -45,5 +45,19 @@
             $this->assertEquals(array("art", "tar"), $result);
         }
 
+        function test_makeAnagram_noMatch()
+        {
+            //Arrange
+            $test_AnagramGenerator = new AnagramGenerator;
+            $input_1 = "rat";
+            $input_2 = "sit";
+
+            //Act
+            $result = $test_AnagramGenerator->makeAnagram($input_1, $input_2);
+
+            //Assert
+            $this->assertEquals("no match", $result);
+        }
+
     }
 ?>
