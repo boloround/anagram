@@ -18,11 +18,14 @@
                 $difference = array_diff($word_array, $input_letters_array);
                 if ($difference == array()) {
                     array_push($output_list_array, $word);
-                } else {
-                    array_push($output_list_array, "No Match!");
                 }
             }
-            return $output_list_array;
+            
+            if (empty($output_list_array)) {
+                return array(["No Match!"]);
+            } else {
+             return $output_list_array;
+            }
         }
     }
 ?>
