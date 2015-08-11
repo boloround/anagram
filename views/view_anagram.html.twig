@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <title>Your Anagram!</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Anagram:</h1>
+        <ul>{% for word in result %}
+            <li>{{ word }}</li>
+            {% endfor %}
+        </ul>
+
+        <form action='/'>
+            <button type='submit' class='btn-default'>Home</button>
+        </form>
+    </div>
+
+</body>
+</html>
