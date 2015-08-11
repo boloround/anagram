@@ -56,7 +56,7 @@
             $result = $test_AnagramGenerator->makeAnagram($input_1, $input_2);
 
             //Assert
-            $this->assertEquals("no match", $result);
+            $this->assertEquals(array("no match"), $result);
         }
 
         function test_makeAnagram_fourLetterWords()
@@ -70,7 +70,7 @@
             $result = $test_AnagramGenerator->makeAnagram($input_1, $input_2);
 
             //Assert
-            $this->assertEquals("no match", $result);
+            $this->assertEquals(array("no match"), $result);
         }
 
         function test_makeAnagram_partialMatch()
