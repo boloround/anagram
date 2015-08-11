@@ -11,7 +11,7 @@ ab -> ab, ba.
 
 #3.
 input a three-letter word 'rat',
-plus a list with three-letter words 'art', 'tart', 'ford': 
+plus a list with three-letter words 'art', 'tar', 'sit': 
 rat -> rat, art.
 
 #4.
@@ -20,5 +20,5 @@ rat -> art.
 
 #5.
 input a three-letter word 'rat',
-plus a list with four-letter words 'art', 'tart':
+plus a list with four-letter words 'art', 'tart', 'ford':
 rat -> art, tart.
