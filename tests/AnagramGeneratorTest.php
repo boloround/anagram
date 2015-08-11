@@ -73,5 +73,18 @@
             $this->assertEquals("no match", $result);
         }
 
+        function test_makeAnagram_partialMatch()
+        {
+            //Arrange
+            $test_AnagramGenerator = new AnagramGenerator;
+            $input_1 = "rat";
+            $input_2 = "art, tart";
+
+            //Act
+            $result = $test_AnagramGenerator->makeAnagram($input_1, $input_2);
+
+            //Assert
+            $this->assertEquals(array("art", "tart"), $result);
+        }
     }
 ?>

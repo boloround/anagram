@@ -24,8 +24,8 @@ plus a list with three-letter words 'sit':
 
 #5.
 input a three-letter word 'rat',
-plus a list with four-letter words 'art', 'ford':
-["art"]
+plus a list with four-letter words 'ford':
+"no match"
 
 
 #6.
