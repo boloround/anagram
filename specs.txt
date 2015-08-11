@@ -1,24 +1,31 @@
 #1.
-input a single letter word 'a',
+input a single-letter word 'a',
 plus a list with a single letter word 'a':
-a -> a.
+["a"]
 
 
 #2.
-input a two-letter word 'ab',
-plus a list with two-letter words 'ab', 'ba', 'cd':
-ab -> ab, ba.
+input a two-letter word 'a',
+plus a list with two-letter words 'a', 'a':
+["a", "a"]
+
 
 #3.
 input a three-letter word 'rat',
-plus a list with three-letter words 'art', 'tar', 'sit': 
-rat -> rat, art.
+plus a list with three-letter words 'art', 'tar':
+["art", "tar"]
+
 
 #4.
-should not output the original word:
-rat -> art.
+input a three-letter word 'rat',
+plus a list with three-letter words 'sit':
+[]
+
 
 #5.
 input a three-letter word 'rat',
-plus a list with four-letter words 'art', 'tart', 'ford':
-rat -> art, tart.
+plus a list with four-letter words 'art', 'ford':
+["art"]
+
+
+partial matches
