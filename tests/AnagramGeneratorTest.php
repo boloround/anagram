@@ -8,13 +8,16 @@
             //Arrange
             $test_AnagramGenerator = new AnagramGenerator;
             $input_1 = "a";
-            $input_2 = ["a"];
+            $input_2 = "a";
 
             //Act
             $result = $test_AnagramGenerator->makeAnagram($input_1, $input_2);
 
             //Assert
-            $this->assertEquals(["a"], $result);
+            $this->assertEquals(array("a"), $result);
         }
+
+
+
     }
 ?>
