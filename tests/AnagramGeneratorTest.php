@@ -64,13 +64,13 @@
             //Arrange
             $test_AnagramGenerator = new AnagramGenerator;
             $input_1 = "rat";
-            $input_2 = "art, ford";
+            $input_2 = "ford";
 
             //Act
             $result = $test_AnagramGenerator->makeAnagram($input_1, $input_2);
 
             //Assert
-            $this->assertEquals("art", $result);
+            $this->assertEquals("no match", $result);
         }
 
     }
