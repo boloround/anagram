@@ -19,7 +19,7 @@ plus a list with three-letter words 'art', 'tar':
 #4.
 input a three-letter word 'rat',
 plus a list with three-letter words 'sit':
-[]
+"no match"
 
 
 #5.
@@ -28,4 +28,7 @@ plus a list with four-letter words 'art', 'ford':
 ["art"]
 
 
-partial matches
+#6.
+input a three-letter word 'rat',
+plus a list with four-letter words 'art', 'tart':
+["art", "tart"]

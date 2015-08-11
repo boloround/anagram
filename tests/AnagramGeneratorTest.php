@@ -59,5 +59,19 @@
             $this->assertEquals("no match", $result);
         }
 
+        function test_makeAnagram_fourLetterWords()
+        {
+            //Arrange
+            $test_AnagramGenerator = new AnagramGenerator;
+            $input_1 = "rat";
+            $input_2 = "art, ford";
+
+            //Act
+            $result = $test_AnagramGenerator->makeAnagram($input_1, $input_2);
+
+            //Assert
+            $this->assertEquals("art", $result);
+        }
+
     }
 ?>

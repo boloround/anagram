@@ -15,10 +15,16 @@
                 $word_array = str_split($word);
                 sort($word_array);
 
-                if ($input_letters_array == $word_array) {
-                    array_push($output_list_array, $word);
+                if (count($input_letters_array) == count($word_array)) {
+                    if ($input_letters_array == $word_array) {
+                        array_push($output_list_array, $word);
+                    } else {
+                        return "no match";
+                    }
                 } else {
-                    return "no match";
+                    if array_intersect($input_letters_array, $word_array) == true {
+                        array_push($output_list_array, $word);
+                    }
                 }
             }
             return $output_list_array;
