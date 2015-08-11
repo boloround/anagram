@@ -20,9 +20,9 @@
                     array_push($output_list_array, $word);
                 }
             }
-            
+
             if (empty($output_list_array)) {
-                return array(["No Match!"]);
+                return array('No Match!');
             } else {
              return $output_list_array;
             }
