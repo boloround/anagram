@@ -1,10 +1,24 @@
 #1.
-input a single letter word: a -> a.
+input a single letter word 'a',
+plus a list with a single letter word 'a':
+a -> a.
+
 
 #2.
-input a two letters word: ab -> ab, ba.
+input a two-letter word 'ab',
+plus a list with two-letter words 'ab', 'ba', 'cd':
+ab -> ab, ba.
 
 #3.
-input a three letters word: abc -> abc, acb, bca, bac, cab, cba.
+input a three-letter word 'rat',
+plus a list with three-letter words 'art', 'tart', 'ford': 
+rat -> rat, art.
 
 #4.
+should not output the original word:
+rat -> art.
+
+#5.
+input a three-letter word 'rat',
+plus a list with four-letter words 'art', 'tart':
+rat -> art, tart.
