@@ -5,7 +5,7 @@ plus a list with a single letter word 'a':
 
 
 #2.
-input a two-letter word 'a',
+input a single-letter word 'a',
 plus a list with two-letter words 'a', 'a':
 ["a", "a"]
 

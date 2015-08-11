@@ -17,6 +17,19 @@
             $this->assertEquals(array("a"), $result);
         }
 
+        function test_makeAnagram_twoLetterWord()
+        {
+            //Arrange
+            $test_AnagramGenerator = new AnagramGenerator;
+            $input_1 = "a";
+            $input_2 = "a, a";
+
+            //Act
+            $result = $test_AnagramGenerator->makeAnagram($input_1, $input_2);
+
+            //Assert
+            $this->assertEquals(array("a", "a"), $result);
+        }
 
 
     }
