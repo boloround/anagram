@@ -17,7 +17,7 @@
             $this->assertEquals(array("a"), $result);
         }
 
-        function test_makeAnagram_twoLetterWord()
+        function test_makeAnagram_twoSingleLetterWords()
         {
             //Arrange
             $test_AnagramGenerator = new AnagramGenerator;
@@ -31,6 +31,19 @@
             $this->assertEquals(array("a", "a"), $result);
         }
 
+        function test_makeAnagram_multiLetterWord()
+        {
+            //Arrange
+            $test_AnagramGenerator = new AnagramGenerator;
+            $input_1 = "rat";
+            $input_2 = "art, tar";
+
+            //Act
+            $result = $test_AnagramGenerator->makeAnagram($input_1, $input_2);
+
+            //Assert
+            $this->assertEquals(array("art", "tar"), $result);
+        }
 
     }
 ?>
